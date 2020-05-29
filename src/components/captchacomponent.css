@@ -1,0 +1,262 @@
+/******************************************
+*  Author : Flexxbo   
+*  Created On : Fri May 29 2020
+*  File : captchacomponent.css
+*******************************************/
+
+/* ! READ BOTTOM FOR CSS BEST PREACTICES ! */
+
+header {
+  display: flex;
+}
+
+h3 {
+  padding-top: auto;
+}
+/****** main content *********/
+.outsidebox {
+  background-color: white;
+  border: black 1px solid;
+  height: 525px;
+  width: 356px;
+  margin: auto;
+}
+.captchalabel {
+  margin-right: 15px;
+  margin-left: 14px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+
+  background-color: #0275d8;
+  border: 1px gray solid;
+  font-size: x-large;
+  height: 100px;
+  padding: 15px;
+  width: 326px;
+  text-align: center;
+}
+.captchalabel > p {
+  text-align: left;
+}
+.captcha {
+  border: white 5px solid;
+}
+.captchimg {
+  border: red 2px solid;
+}
+.captchapic {
+  background-color: greenyellow;
+  height: 80px;
+  width: 80px;
+  margin-left: -12px;
+  margin-right: -12px;
+  margin-bottom: -20px;
+}
+.captchapic:hover {
+  border: #0275d8 solid 2px;
+}
+
+#btnControl {
+  display: none;
+}
+
+#btnControl:checked + label > img {
+  border: #0275d8 2px solid;
+}
+#btnControl2 {
+  display: none;
+}
+
+#btnControl2:checked + label > img {
+  border: #0275d8 2px solid;
+}
+#btnControl3 {
+  display: none;
+}
+
+#btnControl3:checked + label > img {
+  border: #0275d8 2px solid;
+}
+#btnControl4 {
+  display: none;
+}
+
+#btnControl4:checked + label > img {
+  border: #0275d8 2px solid;
+}
+#btnControl5 {
+  display: none;
+}
+
+#btnControl5:checked + label > img {
+  border: #0275d8 2px solid;
+}
+#btnControl6 {
+  display: none;
+}
+
+#btnControl6:checked + label > img {
+  border: #0275d8 2px solid;
+}
+#btnControl7 {
+  display: none;
+}
+
+#btnControl7:checked + label > img {
+  border: #0275d8 2px solid;
+}
+#btnControl8 {
+  display: none;
+}
+
+#btnControl8:checked + label > img {
+  border: #0275d8 2px solid;
+}
+#btnControl9 {
+  display: none;
+}
+
+#btnControl9:checked + label > img {
+  border: #0275d8 2px solid;
+}
+#btnControl10 {
+  display: none;
+}
+
+#btnControl10:checked + label > img {
+  border: #0275d8 2px solid;
+}
+#btnControl11 {
+  display: none;
+}
+
+#btnControl11:checked + label > img {
+  border: #0275d8 2px solid;
+}
+#btnControl12 {
+  display: none;
+}
+
+#btnControl12:checked + label > img {
+  border: #0275d8 2px solid;
+}
+#btnControl13 {
+  display: none;
+}
+
+#btnControl13:checked + label > img {
+  border: #0275d8 2px solid;
+}
+#btnControl14 {
+  display: none;
+}
+
+#btnControl14:checked + label > img {
+  border: #0275d8 2px solid;
+}
+#btnControl15 {
+  display: none;
+}
+
+#btnControl15:checked + label > img {
+  border: #0275d8 2px solid;
+}
+#btnControl16 {
+  display: none;
+}
+#btnControl16:checked + label > img {
+  border: #0275d8 2px solid;
+}
+.captchafooter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 8px;
+  height: 45px;
+  width: 332px;
+}
+
+.captchicons {
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+}
+button {
+  border-radius: 25px;
+  height: 40px;
+  background-color: #0275d8;
+  color: white;
+  align-items: center;
+  margin: auto;
+}
+.captchabutton {
+  border-radius: 5px;
+  font-size: 25px;
+  width: 100px;
+}
+/****** footer *********/
+
+.progressbar {
+  width: 400px;
+  margin: auto;
+}
+
+/*+ #ID +*/
+
+/****** header *********/
+
+/****** main content *********/
+
+/****** footer *********/
+
+/* ! Best practices === */
+
+/* ? ==Each style gets its own line== */
+/*
+* .someDiv {
+*   background: red;
+*   padding: 2em;
+*   border: 1px solid black;
+* }
+*/
+
+/* ?  ==Organize the Stylesheet with a Top-down Structure== */
+/*
+*   Generic classes (body, a, p, h1, etc.)
+*   #header
+*   #nav-menu
+*   #main-content
+*/
+
+/* ? ==Alphabetize your Properties== */
+/*
+#cotton-candy {
+*    color: #fff;
+*    float: left;
+*    font-weight:
+*    height: 200px;
+*    margin: 0;
+*    padding: 0;
+*    width: 150px;
+* }
+*/
+
+/* ? ==Combine Elements== */
+
+/* 
+*h1, h2, h3 {font-family: tahoma, color: #333}
+*/
+
+/* ? ==Understand the Difference Between Block vs. Inline Elements== */
+/*
+*Block elements are elements that naturally clear each line after they are declared, spanning the whole width of the available space. Inline elements take only as much space as they need, and don't force a new line after they're used.
+
+*Here are the lists of elements that are either inline or block:
+*span, a, strong, em, img, br, input, abbr, acronym
+
+*And the block elements:
+*div, h1...h6, p, ul, li, table, blockquote, pre, form
+*/
