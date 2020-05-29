@@ -1,0 +1,156 @@
+/******************************************
+*  Author : Flexxbo   
+*  Created On : Fri May 29 2020
+*  File : captchacomponent.css
+*******************************************/
+
+/* ! READ BOTTOM FOR CSS BEST PREACTICES ! */
+
+header {
+  display: flex;
+}
+
+h3 {
+  padding-top: auto;
+}
+/****** BOX *********/
+.outsidebox {
+  background-color: white;
+  height: 525px;
+  width: 356px;
+  margin: auto;
+  text-align: center;
+}
+.captchalabel {
+  margin: 15px;
+  background-color: #0275d8;
+  border: 1px gray solid;
+  font-size: x-large;
+  height: 100px;
+  padding: 15px;
+  width: 326px;
+}
+.captchalabel > p {
+  text-align: left;
+}
+.captcha {
+  margin: auto;
+}
+.column {
+  padding: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/****** Captcha Images *********/
+
+.captchapic {
+  background-color: greenyellow;
+  height: 80px;
+  width: 80px;
+  margin: 1px;
+}
+.captchapicselect {
+  background-color: greenyellow;
+  height: 80px;
+  width: 80px;
+  margin: 1px;
+  border: #0275d8 solid 2px;
+}
+.captchapic:hover {
+  border: #0275d8 solid 2px;
+}
+
+.captchafooter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 8px;
+  height: 45px;
+  width: 332px;
+}
+
+.captchicons {
+  height: 30px;
+  width: 30px;
+  margin: 10px;
+}
+button {
+  border-radius: 25px;
+  height: 40px;
+  background-color: #0275d8;
+  color: white;
+  align-items: center;
+  margin: auto;
+}
+.captchabutton {
+  border-radius: 5px;
+  font-size: 25px;
+  width: 100px;
+}
+/****** footer *********/
+
+.progressbar {
+  width: 400px;
+  margin: auto;
+}
+
+/*+ #ID +*/
+
+/****** header *********/
+
+/****** main content *********/
+
+/****** footer *********/
+
+/* ! Best practices === */
+
+/* ? ==Each style gets its own line== */
+/*
+* .someDiv {
+*   background: red;
+*   padding: 2em;
+*   border: 1px solid black;
+* }
+*/
+
+/* ?  ==Organize the Stylesheet with a Top-down Structure== */
+/*
+*   Generic classes (body, a, p, h1, etc.)
+*   #header
+*   #nav-menu
+*   #main-content
+*/
+
+/* ? ==Alphabetize your Properties== */
+/*
+#cotton-candy {
+*    color: #fff;
+*    float: left;
+*    font-weight:
+*    height: 200px;
+*    margin: 0;
+*    padding: 0;
+*    width: 150px;
+* }
+*/
+
+/* ? ==Combine Elements== */
+
+/* 
+*h1, h2, h3 {font-family: tahoma, color: #333}
+*/
+
+/* ? ==Understand the Difference Between Block vs. Inline Elements== */
+/*
+*Block elements are elements that naturally clear each line after they are declared, spanning the whole width of the available space. Inline elements take only as much space as they need, and don't force a new line after they're used.
+
+*Here are the lists of elements that are either inline or block:
+*span, a, strong, em, img, br, input, abbr, acronym
+
+*And the block elements:
+*div, h1...h6, p, ul, li, table, blockquote, pre, form
+*/
