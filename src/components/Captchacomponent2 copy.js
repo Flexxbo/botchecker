@@ -7,11 +7,13 @@
 /*===Put imports here===*/
 import React, { useState } from "react";
 import "./captchacomponent2.css";
+import Capimg from "./Capimg";
 import Capimgcopy from "./Capimgcopy";
 
 /*===Start code here===*/
 
 export default function Captchacomponent2() {
+  //let [catpics2, setCatpics2] = useState(catpics);
   let [catpics, setCatpics] = useState([
     "/images/cats/cat1.jpg",
     "/images/cats/cat2.jpg",
@@ -30,29 +32,12 @@ export default function Captchacomponent2() {
     "/images/cats/cat15.jpg",
     "/images/cats/cat16.jpg",
   ]);
-  var audio = new Audio("/audio/Meow.mp3");
-  const start = () => {
-    audio.play();
-    console.log("Meow");
-  };
-  let [id, setId] = useState(Math.random());
-
   function shuffle(catpics) {
     setCatpics((catpics = catpics.sort(() => Math.random() - 0.5)));
-    setId(Math.random());
-    setState("captchapic");
     console.log("onclicksfunction");
     console.log(catpics);
   }
 
-  const [state, setState] = useState("captchapic");
-  const changeColor = () => {
-    if (state === "captchapic") {
-      setState("captchapicselect");
-    } else {
-      setState("captchapic");
-    }
-  };
   return (
     <div className="App Appstart">
       <header className="App-header">
@@ -65,13 +50,7 @@ export default function Captchacomponent2() {
           </div>
           <div className="captcha">
             <div className="column">
-              <img
-                id={id}
-                onClick={() => changeColor()}
-                className={state}
-                src={catpics[0]}
-                alt="Logo"
-              />
+              <Capimgcopy imagesource={catpics[0]} />
               <Capimgcopy imagesource={catpics[1]} />
               <Capimgcopy imagesource={catpics[2]} />
               <Capimgcopy imagesource={catpics[3]} />
@@ -105,7 +84,6 @@ export default function Captchacomponent2() {
                 />
                 <img
                   className="captchicons"
-                  onClick={start}
                   src={"images/HeadphonesCaptcha.png"}
                   alt="Logo"
                 />

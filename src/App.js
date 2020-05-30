@@ -1,7 +1,6 @@
 import React from "react";
 import { Switch, Route, NavLink } from "react-router-dom";
 import "./App.css";
-import Maincomponent from "./components/Maincomponent";
 import Captchacomponent2 from "./components/Captchacomponent2";
 import Capimg from "./components/Capimg";
 import Introcomponent from "./components/Introcomponent";
