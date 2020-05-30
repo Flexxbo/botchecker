@@ -19,12 +19,14 @@ function App() {
         <NavLink to="/Step5"> Step5 </NavLink>
       </nav>
       <Switch>
-        <Route exact path="/"></Route>
-        <Route path="/Step1">
+        <Route exact path="/">
           <Introcomponent />
         </Route>
-        <Route path="/Step2">
+        <Route path="/Step1">
           <Component1 />
+        </Route>
+        <Route path="/Step2">
+          <Captchacomponent2 />
         </Route>
         <Route path="/Step3">
           <Captchacomponent2 />
@@ -36,11 +38,12 @@ function App() {
           <Captchacomponent2 />
         </Route>
       </Switch>
-      <header className="App-header">
-        <h2>Bot-Checker</h2>
-      </header>
     </div>
   );
 }
 
 export default App;
+
+/*       <header className="App-header">
+        <h2>Bot-Checker</h2>
+      </header>*/

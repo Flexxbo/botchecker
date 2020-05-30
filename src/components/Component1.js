@@ -13,7 +13,27 @@ function Component1() {
   return (
     <div className="App">
       <header className="App-header">
-        <h2>Bot-Checker</h2>
+        <h1 id="h1">Bot-Check</h1>
+        <p className="text">Are you uncertain of your purpose in life?</p>
+        <p className="text">
+          Are you sometimes disappointed by humans due to their irrational
+          behaviour?
+        </p>
+
+        <p className="text">
+          Do you spend a lot of time on your computer or your smartphone?
+        </p>
+        <p className="text">
+          Since the introduction of -Captchas- many people nowadays find out,
+          they actually are bots.
+        </p>
+        <h4 className="takeaction">
+          Take this 2 minute Test to find out wether you are a bot or not?
+        </h4>
+
+        <a href="/Step2">
+          <button id="Start">Start</button>
+        </a>
       </header>
     </div>
   );

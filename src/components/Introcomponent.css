@@ -1,0 +1,28 @@
+/******************************************
+*  Author : Flexxbo   
+*  Created On : Sat May 30 2020
+*  File : Introcomponent.css
+*******************************************/
+
+/* ! READ BOTTOM FOR CSS BEST PREACTICES ! */
+
+#h1 {
+  color: goldenrod;
+  font-size: 300px;
+  font-weight: bold;
+}
+
+#Start {
+  border-radius: 5px;
+  height: 40px;
+  background-color: #0275d8;
+  color: white;
+  align-items: center;
+  margin: auto;
+  width: 100px;
+  font-size: 25px;
+}
+.text {
+  margin: 20px;
+  font-size: 50px;
+}
