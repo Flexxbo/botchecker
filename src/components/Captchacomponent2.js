@@ -6,6 +6,8 @@
 
 /*===Put imports here===*/
 import React, { useState } from "react";
+import Popup from "reactjs-popup";
+
 import "./captchacomponent2.css";
 import Capimgcopy from "./Capimgcopy";
 
@@ -109,11 +111,23 @@ export default function Captchacomponent2() {
                   src={"images/HeadphonesCaptcha.png"}
                   alt="Logo"
                 />
-                <img
-                  className="captchicons"
-                  src={"images/InfoCaptcha.png"}
-                  alt="Logo"
-                />
+                <Popup
+                  trigger={
+                    <img
+                      className="captchicons"
+                      src={"images/InfoCaptcha.png"}
+                      alt="Logo"
+                    />
+                  }
+                  position="right center"
+                >
+                  <div>
+                    <p id="popup">
+                      Bots often confuse cats and traffic lights, if you only
+                      see cats, you probably are a bot!
+                    </p>
+                  </div>
+                </Popup>
               </div>
               <a href="/Step3">
                 <button className="captchabutton">Verify</button>

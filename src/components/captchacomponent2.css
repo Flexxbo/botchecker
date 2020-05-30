@@ -76,6 +76,13 @@ h3 {
   width: 30px;
   margin: 10px;
 }
+
+#popup {
+  color: #0275d8;
+  font-size: medium;
+  font-weight: bold;
+}
+
 .captchabutton {
   border-radius: 5px;
   height: 40px;
