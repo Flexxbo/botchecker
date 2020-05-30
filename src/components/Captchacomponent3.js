@@ -9,7 +9,6 @@ import React, { useState } from "react";
 import Popup from "reactjs-popup";
 
 import "./captchacomponent2.css";
-import Capimgcopy1 from "./Capimgcopy1";
 
 /*===Start code here===*/
 
@@ -38,7 +37,7 @@ export default function Captchacomponent2() {
     console.log("Meow");
   };
   let [id, setId] = useState(Math.random());
-
+  let [buttonon, setButtonon] = useState(false);
   function shuffle(personpics) {
     setPersonpics((personpics = personpics.sort(() => Math.random() - 0.5)));
     setId(Math.random());
@@ -70,8 +69,10 @@ export default function Captchacomponent2() {
         "/images/people/robot.png",
       ]);
       setId(Math.random());
+      setButtonon(true);
     } else {
       setState("captchapic");
+      setButtonon(false);
     }
   };
   return (
@@ -238,7 +239,9 @@ export default function Captchacomponent2() {
                 </Popup>
               </div>
               <a href="/Step3">
-                <button className="captchabutton">Verify</button>
+                <button disabled={!buttonon} className="captchabutton">
+                  Verify
+                </button>
               </a>
             </div>
           </div>
