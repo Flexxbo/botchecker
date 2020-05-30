@@ -27,8 +27,8 @@ function Component1() {
           Since the introduction of -Captchas- many people nowadays find out,
           they actually are bots.
         </p>
-        <h4 className="takeaction">
-          Take this 2 minute Test to find out wether you are a bot or not?
+        <h4 className="text">
+          <b>Take this 2 minute Test to find out wether you are a bot - or not?</b>
         </h4>
 
         <a href="/Step1">
