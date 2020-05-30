@@ -3,7 +3,8 @@ import { Switch, Route, NavLink } from "react-router-dom";
 import "./App.css";
 import Captchacomponent2 from "./components/Captchacomponent2";
 import Captchacomponent3 from "./components/Captchacomponent3";
-import Capimg from "./components/Capimg";
+import Captchacomponent4 from "./components/Captchacomponent4";
+import Resultcomponent from "./components/Resultcomponent";
 import Introcomponent from "./components/Introcomponent";
 import Component1 from "./components/Component1";
 
@@ -12,30 +13,30 @@ function App() {
     <div className="App">
       <nav>
         <NavLink to="/"> HomePage </NavLink>
+        <NavLink to="/Start"> Start </NavLink>
         <NavLink to="/Step1"> Step1 </NavLink>
         <NavLink to="/Step2"> Step2 </NavLink>
         <NavLink to="/Step3"> Step3 </NavLink>
-        <NavLink to="/Step4"> Step4 </NavLink>
-        <NavLink to="/Step5"> Step5 </NavLink>
+        <NavLink to="/Result"> Result </NavLink>
       </nav>
       <Switch>
         <Route exact path="/">
           <Introcomponent />
         </Route>
-        <Route path="/Step1">
+        <Route path="/Start">
           <Component1 />
         </Route>
-        <Route path="/Step2">
+        <Route path="/Step1">
           <Captchacomponent2 />
         </Route>
-        <Route path="/Step3">
+        <Route path="/Step2">
           <Captchacomponent3 />
         </Route>
-        <Route path="/Step4">
-          <Capimg />
+        <Route path="/Step3">
+          <Captchacomponent4 />
         </Route>
-        <Route path="/Step5">
-          <Captchacomponent2 />
+        <Route path="/Result">
+          <Resultcomponent />
         </Route>
       </Switch>
     </div>

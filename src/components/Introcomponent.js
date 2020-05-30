@@ -12,13 +12,13 @@ import "./Introcomponent.css";
 
 function Introcomponent() {
   const nextPage = (event) => {
-    window.location.href = "/Step1";
+    window.location.href = "/Start";
   };
 
   useEffect(() => {
     const timer = setTimeout(() => {
       nextPage();
-    }, 3000);
+    }, 2000);
     return () => clearTimeout(timer);
   }, []);
 

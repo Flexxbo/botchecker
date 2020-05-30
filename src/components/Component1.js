@@ -31,7 +31,7 @@ function Component1() {
           Take this 2 minute Test to find out wether you are a bot or not?
         </h4>
 
-        <a href="/Step2">
+        <a href="/Step1">
           <button id="Start">Start</button>
         </a>
       </header>
