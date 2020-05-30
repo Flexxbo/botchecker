@@ -78,7 +78,8 @@ export default function Captchacomponent2() {
   return (
     <div className="App Appstart">
       <header className="App-header">
-        <h3>Step 2/3</h3>
+        <h1 id="h1">Bot-Check</h1>
+        <h3 id="fader">Step 2/3</h3>
         <div className="outsidebox">
           <div className="captchalabel">
             <p>

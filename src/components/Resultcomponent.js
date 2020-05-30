@@ -15,6 +15,7 @@ export default function Captchacomponent2() {
   return (
     <div className="App Appstart">
       <header className="App-header">
+        <h1 id="h1">Bot-Check</h1>
         <h3>Result</h3>
 
         <p>You are a bot!</p>

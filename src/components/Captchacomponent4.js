@@ -15,14 +15,20 @@ export default function Captchacomponent2() {
   return (
     <div className="App Appstart">
       <header className="App-header">
-        <h3>Step 3/3</h3>
+        <h1 id="h1">Bot-Check</h1>
+        <h3 id="fader">Step 3/3</h3>
+        <div className="outsidebox">
+          <div id="inside">
+            <p>You are most likely a bot. </p>
+            <p>
+              There is a slight chance you are human if you answer this last
+              question correctly.
+            </p>
+            <img src={"images/thoughtfulEmoji.png"} alt="Logo" />
+          </div>
+        </div>
 
-        <p>
-          You are most likely a bot. There is a slight chance you are human if
-          you answer this last question correctly.
-        </p>
-
-        <p>Are you a bot?</p>
+        <h3 className="starttest">Are you a bot?</h3>
         <a href="/Result">
           <button id="yes">Yes</button>
         </a>

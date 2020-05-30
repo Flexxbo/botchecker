@@ -7,9 +7,11 @@
 /* ! READ BOTTOM FOR CSS BEST PREACTICES ! */
 
 #h1 {
+  padding: 10px;
   color: goldenrod;
-  font-size: 10vw;
+  font-size: xxx-large;
   font-weight: bold;
+  border: red 2px solid;
 }
 
 #Start {
@@ -18,11 +20,31 @@
   background-color: #0275d8;
   color: white;
   align-items: center;
-  margin: auto;
+  margin: 30px;
   width: 100px;
   font-size: 25px;
 }
 .text {
-  margin: 20px;
-  font-size: 2vw;
+  margin: 10px;
+  font-size: xx-large;
+}
+.starttest {
+  margin-bottom: 40px;
+}
+#fader {
+  margin: auto;
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
