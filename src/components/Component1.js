@@ -11,8 +11,8 @@ import React from "react";
 
 function Component1() {
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="App Appstart">
+      <header className="App-header ">
         <h1 id="h1">Bot-Check</h1>
         <p className="text">Are you uncertain of your purpose in life?</p>
         <p className="text">

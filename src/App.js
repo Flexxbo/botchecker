@@ -1,24 +1,16 @@
 import React from "react";
 import { Switch, Route, NavLink } from "react-router-dom";
 import "./App.css";
+import Introcomponent from "./components/Introcomponent";
+import Component1 from "./components/Component1";
 import Captchacomponent2 from "./components/Captchacomponent2";
 import Captchacomponent3 from "./components/Captchacomponent3";
 import Captchacomponent4 from "./components/Captchacomponent4";
 import Resultcomponent from "./components/Resultcomponent";
-import Introcomponent from "./components/Introcomponent";
-import Component1 from "./components/Component1";
 
 function App() {
   return (
     <div className="App">
-      <nav>
-        <NavLink to="/"> HomePage </NavLink>
-        <NavLink to="/Start"> Start </NavLink>
-        <NavLink to="/Step1"> Step1 </NavLink>
-        <NavLink to="/Step2"> Step2 </NavLink>
-        <NavLink to="/Step3"> Step3 </NavLink>
-        <NavLink to="/Result"> Result </NavLink>
-      </nav>
       <Switch>
         <Route exact path="/">
           <Introcomponent />
@@ -39,6 +31,14 @@ function App() {
           <Resultcomponent />
         </Route>
       </Switch>
+      <nav>
+        <NavLink to="/"> HomePage </NavLink>
+        <NavLink to="/Start"> Start </NavLink>
+        <NavLink to="/Step1"> Step1 </NavLink>
+        <NavLink to="/Step2"> Step2 </NavLink>
+        <NavLink to="/Step3"> Step3 </NavLink>
+        <NavLink to="/Result"> Result </NavLink>
+      </nav>
     </div>
   );
 }
