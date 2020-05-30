@@ -26,6 +26,11 @@ export default function Captchacomponent2() {
         <a href="/Result">
           <button id="yes">Yes</button>
         </a>
+        <img
+          className="progressbar"
+          src={"images/Progressbar33.png"}
+          alt="Logo"
+        />
       </header>
     </div>
   );

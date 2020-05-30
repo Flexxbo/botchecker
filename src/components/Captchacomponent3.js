@@ -248,7 +248,7 @@ export default function Captchacomponent2() {
         </div>
         <img
           className="progressbar"
-          src={"images/ProgressBar2.png"}
+          src={"images/Progressbar23.png"}
           alt="Logo"
         />
       </header>
