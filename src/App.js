@@ -2,6 +2,7 @@ import React from "react";
 import { Switch, Route, NavLink } from "react-router-dom";
 import "./App.css";
 import Captchacomponent2 from "./components/Captchacomponent2";
+import Captchacomponent3 from "./components/Captchacomponent3";
 import Capimg from "./components/Capimg";
 import Introcomponent from "./components/Introcomponent";
 import Component1 from "./components/Component1";
@@ -28,7 +29,7 @@ function App() {
           <Captchacomponent2 />
         </Route>
         <Route path="/Step3">
-          <Captchacomponent2 />
+          <Captchacomponent3 />
         </Route>
         <Route path="/Step4">
           <Capimg />

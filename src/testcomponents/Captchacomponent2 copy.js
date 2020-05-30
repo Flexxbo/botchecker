@@ -7,8 +7,8 @@
 /*===Put imports here===*/
 import React, { useState } from "react";
 import "./captchacomponent2.css";
-import Capimg from "./Capimg";
-import Capimgcopy from "./Capimgcopy";
+import Capimg from "../components/Capimg";
+import Capimgcopy from "../components/Capimgcopy";
 
 /*===Start code here===*/
 
